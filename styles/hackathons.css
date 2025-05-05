@@ -1,0 +1,143 @@
+/* Hackathons page styles */
+
+.nav-links {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent);
+  }
+  
+  .nav-links a.active {
+    color: var(--hackathon);
+  }
+  
+  .next-event {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--hackathon) 100%);
+    border-radius: 12px;
+    padding: var(--space-3);
+    box-shadow: var(--card-shadow);
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+  }
+  
+  .next-event .hackathon-card {
+    background: var(--bg-primary);
+    margin: 0;
+    transform: none;
+    border-left-width: 6px;
+  }
+  
+  .next-event .countdown {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: var(--space-2) 0;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    padding: var(--space-2);
+    border-radius: 8px;
+  }
+  
+  .countdown-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: var(--space-2);
+  }
+  
+  .countdown-unit {
+    display: inline-block;
+    text-align: center;
+    margin: 0 var(--space-2);
+  }
+  
+  .countdown-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--hackathon);
+  }
+  
+  .countdown-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Calendar event dot for hackathons */
+  .date-event-dot.hackathon {
+    background-color: var(--hackathon);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: var(--space-2);
+    }
+    
+    .countdown {
+      font-size: 1.5rem;
+    }
+    
+    .countdown-unit {
+      margin: 0 var(--space-1);
+    }
+    
+    .countdown-value {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links {
+      font-size: 0.875rem;
+    }
+    
+    .countdown {
+      font-size: 1.25rem;
+    }
+    
+    .countdown-unit {
+      margin: 0 4px;
+    }
+    
+    .countdown-value {
+      font-size: 1.25rem;
+    }
+  }
+
+.abc{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 10px solid #e1ffe11a;
+
+}
+
+.add-event-section{
+  background-color: #e1ffe11a;
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid ;
+
+}
+.add-event-button{
+  display: flex;
+  width: 20%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 10px solid #e1ffe11a;
+}
